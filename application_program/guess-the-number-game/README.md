@@ -1,3 +1,5 @@
+# Guess the number game
+
 ❯ python3 main.py
 
 please type min number: 1 <br>
