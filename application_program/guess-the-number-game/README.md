@@ -1,15 +1,18 @@
 # Guess the number game
 
+```bash
 ❯ python3 main.py
 
-please type min number: 1 <br>
-please type max number: 6 <br>
-Please guess the number <br>
-3 <br>
-Your num is hight! Please guess the number <br>
-1 <br>
-Your num is low! Please guess the number <br>
-4 <br>
-Your num is hight! Please guess the number <br>
-2 <br>
-You Win!  <br>
+please type min number: 1
+please type max number: 6
+Please guess the number
+
+Your num is hight! Please guess the number
+1
+Your num is low! Please guess the number
+4
+Your num is hight! Please guess the number
+2
+
+You Win!
+```
