@@ -2,6 +2,7 @@ import socket
 import os
 from faker import Factory
 
+
 def main():
 
     sock = socket.socket(socket.AF_UNIX, socket.SOCK_DGRAM)
@@ -22,7 +23,7 @@ def main():
 
         print('received {} bytes from {}'.format(len(data), address))
         print(data)
-   
+
         if data:
             if data == b'hello\n':
                 reply = 'hello, how are you doing?'
@@ -31,9 +32,10 @@ def main():
             else:
                 fake = Factory.create('en_US')
                 reply = fake.text()
-    
+
             sent = sock.sendto(reply.encode(), address)
             print('sent {!r} bytes back to {}'.format(sent, address))
+
 
 if __name__ == "__main__":
     main()
